@@ -1,0 +1,135 @@
+Task M3
+(1)testIsGameOver(BoardTest)
+
+Hypothesis 1: IsGameOver returns true when there are still food pellets. (true)
+Hypothesis 2: IsGameOver returns true when the Pacman does not get caught.
+Hypothesis 3: The isPassable method is not working.
+
+Hypothesis 1: Accepted. I set a breakpoint at the line "b.getGridRows().get(1).get(2).addFood();", this would add a food
+at the position (2, 1), and I use dubugger to run the test, it shows that the existsfood would be assigned true when it
+comes to (2, 1). However, since the loop has not ended, it would go on, and the existsfood would be assigned false if
+there is no food at the next position. Inclusion, the value of existsfood depends whether the last position has a food
+or not, but not the whole board has a food or not. To fix this bug, we need to break the loop when we meet a food in the
+whole board.
+
+Hypothesis 2: Rejected. I looked over the pacmanCaught in isGameover and it is totally true.
+
+Hypothesis 3: Rejected. I looked over the isPassable method, since it is simple, we could see that it is working
+correctly.
+
+
+
+(2)testMoveto(BoardTest)
+
+This is a faulty test.
+
+(3)testAddSprite(GridLocationTest)
+
+Hypothesis 1: Maybe the addSprite does not consume a food, but it does.
+Hypothesis 2: Maybe the RandomMonster method does not work correctly.
+Hypothesis 3: Maybe the addSprite does not add the sprite at all.
+
+Hypothesis 1: Accepted. I looked over the method of addSprite of RandomMonster and TrackerMonster. I found that they
+are all consuming food in which they should not. So I just delete the consumefood() in addSprite of RandomMOnster, and
+addSprite of TrackerMonster.
+
+Hypothesis 2: Rejected. The RandomMonster method does work correctly. Since it does everything it is supposed to do.
+
+Hypothesis 3: Rejected. The addSprite does add the sprite actually.
+
+(4)makeMove(TrackerMonsterTest)
+
+Hypothesis 1: Maybe the getPacman() is not getting the pacman.
+Hypothesis 2: Maybe the getTrackerMonster() is not getting the TrackerMonster.
+Hypothesis 3: Maybe there is something wrong with the tickboard().
+
+Hypothesis 1: Rejected. The getPacman() does get the pacman of a board correctly.
+
+Hypothesis 2: Rejected. The getTrackerMonster() does get the TrackerMonster of a board correctly.
+
+Hypothesis 3: Accepted. The getHorizontalDirectionToPacman of the makeMove() of TrackerMonster in the tickboard() is not
+working correctly. When it is going to make the trackerMonster move, it is going to get the horizontal direction of a
+trackermonster should move to towards the pacman. When the trackerMonster is on the left of the pacman, it should move
+to right; and when it is on the right of the pacman, it should move to left. However, in the
+getHorizontalDirectionToPacman, the direction this method produces are totally flipped.
+
+Taks M4
+1. These three classes are ArrayList, LinkedList, and List.
+
+2. The Board class is in the model package.
+
+3. These three static fileds are int BOARD_WIDTH, int BOARD_HEIGHT, and String BOARD_DEFN.
+
+4. These four instances are List<List<GridLocation>> board, Pacman pacman, List<RandomMonster> randomMonsters, and
+List<TrackerMonster> trackerMonsters.
+
+5. Private void initBoard, and Public void tickBoard.
+
+6. Template
+package ca.ubc.cpsc210.xxx.xxx;
+
+import java.util.xxxxx;
+import java.util.lllll;
+import java.util.rrrrr;
+
+public class lol {
+    private static int lol_x = 0;
+    private static int lol_y = 10;
+
+    public lol(){
+
+    }
+
+    public int getx(){
+
+    }
+
+    publics int gety(){
+
+    }
+
+
+}
+
+7. Template for ListUtilities
+package ca.ubc.cs.util;
+
+import java.util.LinkedList;
+
+public class ListUtilities {
+
+LinkedList data;
+
+public LinkedList getData() {
+    return data;
+}
+
+}
+
+8.
+Constructor builds an instance of a class according to its static fields;
+However, the method is the behaviour that a object can take.
+
+9.
+Header for the constructor:
+public ListUtilities(){
+
+}
+
+Task M5
+I find that making hypotheses is a very good way to find problems when tracking down bugs. Since, we make hypothesis
+about the origin of that bug, and we will debug it, then, we can decide to reject the hypothesis or accept the
+hypothesis. This is a very organized way to track down bugs, cause you might get lost if you do not follow an organized
+way.
+
+I learnt how to add element into a list, like List<> list1.add(); I got more familiar with the debugger and breakpoint,
+which are very useful when you are tracking down bugs. I am still kind of confued about static and non-static.
+
+ 6. I feel confident ...
+            3 using IntelliJ;
+            3 exploring Java code;
+            3 writing Java code;
+            3 that I understand the code in the Pacman project;
+            3 that I understand the code in the TrackerMonsterTest test class;
+            3 that I understand the code in the TrackerMonster class;
+            3 that I understand the utility of JUnit tests.

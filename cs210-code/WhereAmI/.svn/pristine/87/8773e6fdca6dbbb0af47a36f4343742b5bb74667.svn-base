@@ -1,0 +1,20 @@
+package whereami;
+
+/**
+ * A class that uses a LocationService to determine the current continent ---
+ * via the whichContinent method.
+ */
+public class WhereAmI {
+
+    /*
+     * This method queries locator for Internet distances to the 7 continents
+     * around the globe and returns the current continent name as a string.
+     * 
+     * EFFECTS: returns the current continent
+     */
+    public Continent whichContinent(ILocationService locator) {
+        // Replace this stub with a full implementation of the method!
+        return null;   // STUB
+    }
+
+}

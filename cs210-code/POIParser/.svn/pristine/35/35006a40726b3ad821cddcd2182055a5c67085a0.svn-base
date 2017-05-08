@@ -1,0 +1,20 @@
+package ca.ubc.cpsc210.sustainabilityapp.model.parser;
+
+import java.util.List;
+
+import org.xml.sax.helpers.DefaultHandler;
+
+import ca.ubc.cpsc210.sustainabilityapp.model.PointOfInterest;
+
+public class MapInfoParser extends DefaultHandler {
+	
+	private List<PointOfInterest> pointsOfInterest;
+
+    // Constructor
+    // EFFECTS: this parsers list of points of interest get the list passed as a parameter
+	public MapInfoParser(List<PointOfInterest> pointsOfInterest) {
+		this.pointsOfInterest = pointsOfInterest;
+	}
+
+    //TODO: override methods in DefaultHandler to parse Point of Interest data
+}

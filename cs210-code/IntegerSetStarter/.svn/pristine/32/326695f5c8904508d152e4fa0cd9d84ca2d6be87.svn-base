@@ -1,0 +1,8 @@
+package ca.ubc.cs.cpsc210.integerset.util;
+
+/*
+ * Represents a set of integers
+ */
+class IntegerSet {
+
+}

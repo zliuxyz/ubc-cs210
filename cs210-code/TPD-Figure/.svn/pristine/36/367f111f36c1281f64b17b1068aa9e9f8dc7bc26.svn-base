@@ -1,0 +1,9 @@
+package ca.ubc.cpsc210.tpd.app;
+
+public class FigureApp {
+
+	public static void main(String[] args) {
+
+	}
+
+}

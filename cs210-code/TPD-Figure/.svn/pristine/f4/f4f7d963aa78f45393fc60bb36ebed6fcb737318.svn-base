@@ -1,0 +1,100 @@
+package ca.ubc.cpsc210.tpd.figures;
+
+import java.awt.Graphics;
+import java.awt.Point;
+
+public class Oval {
+	private int x;
+	private int y;
+	private int width;
+	private int height;
+	
+	// Constructs a oval
+	// EFFECTS: oval has zero width and height and is at position start
+	public Oval(Point start) {
+		x = start.x;
+		y = start.y;
+		width = 0;
+		height = 0;
+	}
+	
+	public int getX() {
+		return x;
+	}
+	
+	public int getY() {
+		return y;
+	}
+	
+	public int getWidth() {
+		return width;
+	}
+	
+	public int getHeight() {
+		return height;
+	}
+	
+	// REQUIRES: w >= 0, h >= 0
+	// MODIFIES: this
+	// EFFECTS: sets width to w and height to h
+	public void setBounds(int w, int h) {
+		width = w;
+		height = h;
+	}
+	
+	// REQUIRES: bottomRight.x >= getX(), bottomRight.y >= getY()
+	// MODIFIES: this
+	// EFFECTS: sets width to (bottomRight.x - getX()) 
+	//          and height to (bottomRight.y - getY())
+	public void setBounds(Point bottomRight) {
+		width = bottomRight.x - x;
+		height = bottomRight.y - y;
+	}
+	
+	// Translates oval
+	// MODIFIES: this
+	// EFFECTS: oval is shifted dx units horizontally and dy units vertically
+	public void translate(int dx, int dy) {
+		x = x + dx;
+		y = y + dy;
+	}
+	
+	// Does oval contain a given point?
+	// EFFECTS: returns true if the oval contains given point; false otherwise
+	public boolean contains(Point p) {
+		final double TOL = 1.0e-6;
+		double halfWidth = width / 2.0;
+		double halfHeight = height / 2.0;
+		double diff = 0.0;
+		
+		//[NOTE TO CPSC 210 STUDENTS: don't spend ANY time worrying about
+		// why this implementation looks the way it does.  The mathematical
+		// details of how we determine if an oval contains a point are
+		// not important in the context of this course!]
+		
+		if (halfWidth > 0.0)
+			diff = diff + sqrDiff(x + halfWidth, p.x) / (halfWidth * halfWidth);
+		else
+			diff = diff + sqrDiff(x + halfWidth, p.x);
+		
+		if (halfHeight > 0.0)
+			diff = diff + sqrDiff(y + halfHeight, p.y) / (halfHeight * halfHeight);
+		else
+			diff = diff + sqrDiff(y + halfHeight, p.y);
+		
+		return  diff <= 1.0 + TOL;
+	}
+	
+	// Draw oval
+	// MODIFIES: g
+	// EFFECTS: draws the oval on the given graphics object
+	public void draw(Graphics g) {
+		g.drawOval(x, y, x + width, y + height);
+	}
+	
+	// Compute square of difference
+	// EFFECTS: returns the square of the difference of num1 and num2
+	private double sqrDiff(double num1, double num2) {
+		return (num1 - num2) * (num1 - num2);
+	}
+}

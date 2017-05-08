@@ -1,0 +1,38 @@
+Task M2.3
+
+Answer: the keyword "this" refers to the current class that the method is in.
+
+Task M3.1
+
+Answer: the Constructor is a method that the class invoked to creat a new instance of a class according to the class
+blueprint.
+
+Task M3.2
+
+Answer: when you are going to create a new instance of a class, the constructor is called.
+
+Task M7.4
+
+Answer: I searched the java documentations for changing a string to lowercase, which will help me deal with the case sensitive
+problem.
+
+Task M8
+
+Answer:
+
+1. I learnt how to construct a new list, also how to access the specified element in a list.
+
+2. Nothing new actually.
+
+3. I am still confused about the apparent type stuff.
+
+   I feel confident ...
+            3 using IntelliJ;
+            3 exploring Java code;
+            3 writing Java code;
+            5 that I understand the code I wrote in the TodoItem class;
+            5 that I understand the code I wrote in the TodoList class;
+            2 that I understand the code in the TestTodoUI class;
+            4 that I understand the utility of JUnit tests.
+
+

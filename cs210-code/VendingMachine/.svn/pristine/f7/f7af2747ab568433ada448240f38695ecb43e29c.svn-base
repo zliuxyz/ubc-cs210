@@ -1,0 +1,25 @@
+package ca.ubc.cs.cpsc210.machine.test;
+
+import ca.ubc.cs.cpsc210.machine.model.PaymentUnit;
+import org.junit.Before;
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
+public class PaymentUnitTest {
+    private PaymentUnit vm;
+
+    @Before
+    //construct a new PaymentUnit object prior to running each test
+    public void setUp() throws Exception {
+        vm = new PaymentUnit();
+    }
+
+    @Test
+    public void testSample() {
+        //TODO: remove this test method (it's just a model for how your tests should look)
+        fail("This test has failed");
+    }
+
+    //TODO: add tests
+}

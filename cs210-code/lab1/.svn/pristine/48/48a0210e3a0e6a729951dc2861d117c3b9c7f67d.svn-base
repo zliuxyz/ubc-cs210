@@ -1,0 +1,123 @@
+Section1(M1):
+
+Task M1:
+
+non-static fields(where the objects store their individual states in, their values are unique to each instance of
+a class, learnt by the Java tutorial.)
+
+static fields(where this variable is unchanged, since there is exactly one copy of this variable in existence,
+no matter how many times the class has been instantiated, learn by the Java tutorial.)
+
+||(means the conditional or, learnt by the Java tutorial.)
+
+----------------------------------------------------------
+
+Section2(M2 M5 M6):
+
+Task M2:
+
+I found the “tickBoard” method by just looking over the code, and found it in the getters. It is easy to find the code,
+since it is should be located in the Getter methods. Also, it has a very straightforward name which is “tickBoard”.
+
+Task M5:
+
+1.This change would make the pacman move every time the RandomMonster moves, and it would stop when all the
+randomMonsters are moved.
+
+The reason why the functionality changed this way is because we make the pacman in the for each loop of RandomMonster.
+So, when we execute every RandomMonster, the pacman would be executed at the same time. However, the pacman is supposed
+to be executed just once after the for each loop of TrackerMonster and RandomMonster.
+
+2.
+pacman = new Pacman(this);
+randomMonsters = new LinkedList<RandomMonster>();
+
+the pacman is constructed from the Pacman class, and the randomMonsters is constructed from the LinkedList class.
+
+3.
+setLocation(new_x, new_y) is the method being called in the last line of moveTo(Pacman sprite, int new_x, int new_y)
+method.
+
+There are two parameters are being processed to the method and they are new_x and new_y.
+
+4.
+On the first iteration: x=0, y=0
+On the second iteration: x=1, y=0
+On the sixteenth iteration: x=2, y=1
+
+When the type is equal to ‘M’, the x and y are the positions of a TrackerMonster; when the type is ‘R’, the x and y are
+the positions of a RandomMonster; when the type is ‘P’, the x and y are the positions of a Pacman.
+
+5.
+two instances of RandomMonster are created,
+one instance of TrackMonster is created.
+
+6.
+the || operator is a Conditional-OR, which means that either the first operand is true or the second operand is true.
+
+Task M6:
+the “step over” is the technique that I used well. Thought it is the basic technique of the debugger, the “step over”
+enables us to look over some specific method to see how it executes data. Because the breakpoint will stop the
+program at the breakpoint, and we can step over the specific part of the whole method easily. However, if we choose
+some other breakpoint that is far from the target, it would take a long time to go through the whole method.
+for example: to find the number of instances that the monster class created, I put a breakpoint at the line
+“if (type == ‘M’) {“, and set the i to equal to the length of the BOARD_DEFN, in which I could just use step over to
+find the value easily.
+
+--------------------------------------------------------
+
+Section3(M4)
+
+Task M4:
+
+To tick the board, we need to tick the trackerMonsters(listof tm), randomMonsters(listof rm), and the pacman. First,
+we ask that if there is a tm(TrackerMonster) in the trackMonsters, we make the tm move by using makeMove(). Then, we go
+back to ask if there is a tm(TrackerMonster) in the trackMonsters, if there is, we do the same thing, if there is not,
+we end this loop. So this is a for each loop, and we would go through every tm in the list and execute every single tm
+until the list is empty.
+
+Second, we do the same stuff we did with trackerMonsters to randomMonsters until the list is empty.
+
+In the end, we tick the pacman by applying makeMove to pacman.
+
+--------------------------------------------------------
+
+
+Section4(M7)
+
+Task M7:
+
+(1).
+I.public would make the method be seen in these packages; while private only make the method be seen in its package.
+
+II.since the Java is a object-oriented language, the result comes before the name of the method.
+e.g. private void(result) initBoard.
+
+III.we need to declare the type of a variable and its name when we want to make a variable.
+
+(2).
+a.In Intellij, we could make the breakpoint when we use the debugger. The breakpoint is very useful since when we want
+to look over the step of a method in a large method, we could use the breakpoint to make the debugging stop before that
+breakpoint, then we could use the “step over” or other techniques of debugger to look over the method that we are
+interested in.
+
+b.In Intellij, there are different views that we can choose. For example, we could use CMD+E to switch to the Structure
+mode and we could see all the methods in each part, which is very convenient.
+
+c.In Intellij, there are bunch of keyboard shortcuts which are very useful, for example, CMD+R would run the whole
+program, CMD+D would be debugger, and etc.
+
+(3).
+I am still confused about the breakpoint and the structure of the java code. For example, in the pacman lab, if I set
+the breakpoint at some lines, and I click debugger, it would run the program and show the game, but I would not see any
+values I want. However, if I set the breakpoint at some other lines, it would show the values of x and y (for example)
+by each iteration.
+
+(4)
+I feel confident about:
+      3- using IntelliJ;
+      3- exploring Java code;
+      2- writing Java code;
+      2- that I understand the code in the Pacman project;
+      4- that I understand the code in the Board class;
+      5- that I understand intra-method control flow diagrams.

@@ -1,0 +1,87 @@
+[
+  {
+    "id": "Law",
+    "displayName": "Law Building",
+    "address": "1822 East Mall, Vancouver, BC",
+    "lat": 49.269041,
+    "long": -123.25319,
+    "description": "LEED Gold certification. Renovating the old building would have cost four-fifths the amount to construct a new building. In contrast to the Chemistry Centre, UBC decided to construct a new law building instead of renovating -- each project is evaluated individually to determine what is best environmentally, economically and socially. The Faculty of Law outgrew the old building so now they will enjoy state-of-the-art teaching and research spaces that promote legal discussions and student engagement.",
+    "features": [
+      "LEED Certification",
+      "Wastewater Treatment"
+    ]
+  },
+  {
+    "id": "CK_CHOI",
+    "displayName": "CK Choi Building",
+    "address": "1855 West Mall, Vancouver, BC",
+    "lat": 49.26786,
+    "long": -123.2582,
+    "description": "Representative of the first green buildings in North America, along with the Liu Centre for Global Issues. No certification because this was the one building to start the green building movement in North America. Made out of 50% recycled or reused materials, including bricks that are over 300 years old! All sewage treated on site with composting toilets and a wetland inspired by NASA.",
+    "features": [
+      "Low Impact Materials",
+      "Wastewater Treatment"
+    ]
+  },
+  {
+    "id": "CHEM",
+    "displayName": "Chemistry Centre",
+    "address": "2036 Main Mall, Vancouver, BC",
+    "lat": 49.266179,
+    "long": -123.253805,
+    "description": "By reusing 100% of the exterior shell and 60% of the interior elements the renewal project diverted 80% of the construction waste into recycling and away from the landfill. High-efficiency lighting and heat recovery inside the building reduces energy use by 21% compared to the original building",
+    "features": [
+      "Low Impact Materials"
+    ]
+  },
+  {
+    "id": "CIRS",
+    "displayName": "CIRS",
+    "address": "2260 West Mall, Vancouver, BC",
+    "lat": 49.261763,
+    "long": -123.253411,
+    "description": "CIRS is a state-of-the-art 'living laboratory' where researchers and industry partners can explore current and future building systems and technologies, using the building itself as their lab. The building sports a range of features, including a rain water harvest system, a deciduous facade, geothermal heating and cooling, wastewater treatment, a green roof, and more. Also check out nearby Sustainability Street, a demonstration urban landscape that collects rainwater from the street's watershed and stores it in an underground well for use in CIRS.",
+    "features": [
+      "Geothermal",
+      "Low Impact Materials",
+      "Rainwater Recovery",
+      "Solar Energy",
+      "Wastewater Treatment",
+      "LEED Certification"
+    ]
+  },
+  {
+    "id": "BRDC",
+    "displayName": "Bioenergy Research and Demonstration Centre",
+    "address": "Agronomy Road and Lower Mall",
+    "lat": 49.260231,
+    "long": -123.253766,
+    "description": "Creating energy from carbon neutral sources is critical to ensure environmental sustainability. UBC will use wood waste from Vancouver and turn it into synthetic gas to run a generator that will provide enough steam to heat 25% of the campus or sufficient electricity to power the 1,600 bed Marine Drive Student Residence. This generator will be housed inside the first Cross Laminated Timber building in North America.",
+    "features": [
+      "Biofuel"
+    ]
+  },
+  {
+    "id": "UBC_FARM",
+    "displayName": "UBC Farm",
+    "address": "6186 South Campus Road, Vancouver, BC",
+    "lat": 49.25143,
+    "long": -123.238181,
+    "description": "The UBC Farm is a 24-hectare learning and research farm located at the south end of the main campus. The farm is student-driven and integrated with the wider community. As the only working farmland within the city of Vancouver, the UBC Farm is an urban agrarian gem, featuring a landscape of unique beauty.",
+    "features": [
+      "Sustainable Agriculture"
+    ]
+  },
+  {
+    "id": "LSC",
+    "displayName": "Life Sciences Centre",
+    "address": "2350 Health Sciences Mall, Vancouver, BC",
+    "lat": 49.26239,
+    "long": -123.246244,
+    "description": "The largest LEED Gold building in Canada. Over 3,500 people learn and do cutting-edge medical research every day. The building does not disrupt its surrounding watershed, nor does it pollute the night sky with light.",
+    "features": [
+      "LEED Certification"
+    ]
+  }
+]
+

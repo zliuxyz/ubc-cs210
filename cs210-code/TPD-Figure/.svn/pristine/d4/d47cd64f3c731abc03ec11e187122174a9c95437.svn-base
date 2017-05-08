@@ -1,0 +1,75 @@
+package ca.ubc.cpsc210.tpd.figures;
+
+import java.awt.Graphics;
+import java.awt.Point;
+
+public class Rectangle {
+	private int x;
+	private int y;
+	private int width;
+	private int height;
+	
+	// Constructs a rectangle
+	// EFFECTS: rectangle has zero width and height and is at position start
+	public Rectangle(Point start) {
+		x = start.x;
+		y = start.y;
+		width = 0;
+		height = 0;
+	}
+	
+	public int getX() {
+		return x;
+	}
+	
+	public int getY() {
+		return y;
+	}
+	
+	public int getWidth() {
+		return width;
+	}
+	
+	public int getHeight() {
+		return height;
+	}
+	
+	// REQUIRES: w >= 0, h >= 0
+	// MODIFIES: this
+	// EFFECTS: sets width to w and height to h
+	public void setBounds(int w, int h) {
+		width = w;
+		height = h;
+	}
+	
+	// REQUIRES: bottomRight.x >= getX(), bottomRight.y >= getY()
+	// MODIFIES: this
+	// EFFECTS: sets width to (bottomRight.x - getX()) 
+	//          and height to (bottomRight.y - getY())
+	public void setBounds(Point bottomRight) {
+		width = bottomRight.x - x;
+		height = bottomRight.y - y;
+	}
+	
+	// Translates rectangle
+	// MODIFIES: this
+	// EFFECTS: rectangle is shifted dx units horizontally and dy units vertically
+	public void translate(int dx, int dy) {
+		x = x + dx;
+		y = y + dy;
+	}
+	
+	// Does rectangle contain a given point?
+	// EFFECTS: returns true if rectangle contains given point; false otherwise
+	public boolean contains(Point p) {
+		return x <= p.x && p.x <= x + width
+					&& y <= p.y && p.y <= y + height;
+	}
+	
+	// Draw rectangle
+	// MODIFIES: g
+	// EFFECTS: draws the rectangle on the given graphics object
+	public void draw(Graphics g) {
+		g.drawRect(x, y, x + width, y + height);
+	}
+}

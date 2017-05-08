@@ -1,0 +1,71 @@
+package ca.ubc.cpsc210.tpd.clocktests;
+
+/*
+import ca.ubc.cpsc210.tpd.clock.AlarmClock;
+
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import ca.ubc.cpsc210.tpd.clock.AlarmClock;
+
+public class AlarmClockTests extends ClockTests {
+
+	private AlarmClock aClk;
+	
+	@Before
+	@Override
+	public void runBefore() {
+		aClk = new AlarmClock();
+		clk = aClk;
+	}
+	
+	@Test
+	public void testAlarmClockConstructor() {
+		assertEquals(0, aClk.getAlarmHrs());
+		assertEquals(0, aClk.getAlarmMins());
+		assertFalse(aClk.isSounding());
+		assertFalse(aClk.isAlarmOn());
+	}
+	
+	@Test
+	public void testSetAlarmTime() {
+		aClk.setAlarmTime(7, 52);
+		assertEquals(7, aClk.getAlarmHrs());
+		assertEquals(52, aClk.getAlarmMins());
+		assertTrue(aClk.isAlarmOn());
+		assertFalse(aClk.isSounding());
+	}
+	
+	@Test 
+	public void turnAlarmOnOff() {
+		assertFalse(aClk.isAlarmOn());
+		aClk.setAlarm(true);
+		assertTrue(aClk.isAlarmOn());
+		aClk.setAlarm(false);
+		assertFalse(aClk.isAlarmOn());
+	}
+	
+	@Test
+	public void testAlarmClockSounding() {
+		aClk.setAlarmTime(6, 23);
+		assertTrue(aClk.isAlarmOn());
+		assertFalse(aClk.isSounding());
+		advanceClock(6, 22, 59);
+		assertTrue(aClk.isAlarmOn());
+		assertFalse(aClk.isSounding());
+		aClk.tick();
+		assertTrue(aClk.isSounding());
+		assertTrue(aClk.isAlarmOn());
+		aClk.tick();
+		aClk.tick();
+		assertTrue(aClk.isSounding());
+		assertTrue(aClk.isAlarmOn());
+		aClk.setAlarm(false);
+		assertFalse(aClk.isSounding());
+		assertFalse(aClk.isAlarmOn());
+	}
+}
+*/

@@ -1,0 +1,11 @@
+package ca.ubc.cs.cpsc210.integerset.app;
+
+/**
+ * Very simple app to demonstrate *use* of IntegerSet
+ */
+public class Main {
+
+    public static void main(String[] args) {
+
+    }
+}
