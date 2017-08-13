@@ -22,7 +22,7 @@ public class BranchTest {
     }
 
     @Test
-    public void testgetPoints() {
+    public void testGetPoints() {
         List<LatLon> pts = new ArrayList<LatLon>();
         LatLon latLon = new LatLon(51.6037, 0.093493);
         LatLon latLon1 = new LatLon(51.6134, 0.092077);

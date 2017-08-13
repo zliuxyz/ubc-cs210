@@ -9,6 +9,7 @@ package ca.ubc.cs.cpsc210.mindthegap.model;
  * start and end of the string.
  */
 public class Arrival implements Comparable<Arrival>{
+
     private int timeToStation;
     private String destination;
     private String platform;

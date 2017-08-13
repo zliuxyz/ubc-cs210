@@ -17,13 +17,13 @@ public class LineResourceDataTest {
     }
 
     @Test
-    public void testgetFileName() {
+    public void testGetFileName() {
         assertEquals(lineResourceData.getFileName(), LineResourceData.CENTRAL.getFileName());
 
     }
 
     @Test
-    public void testgetColour() {
+    public void testGetColour() {
         assertEquals(lineResourceData.getColour(), LineResourceData.CENTRAL.getColour());
     }
 

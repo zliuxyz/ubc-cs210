@@ -26,7 +26,7 @@ public class ArrivalBoardTest {
 
 
     @Test
-    public void testgetLine() {
+    public void testGetLine() {
         Line line = new Line(LineResourceData.BAKERLOO, "lol", "ahahah");
 
 
@@ -35,17 +35,17 @@ public class ArrivalBoardTest {
     }
 
     @Test
-    public void testgetTravelDirn() {
+    public void testGetTravelDirn() {
         assertEquals("NorthWest", arrivalBoard.getTravelDirn());
     }
 
     @Test
-    public void testgetNumArrivals() {
+    public void testGetNumArrivals() {
         assertEquals(0, arrivalBoard.getNumArrivals());
     }
 
     @Test
-    public void testaddArrival() {
+    public void testAddArrival() {
         Arrival arrival = new Arrival(100, "Beijing", "Platform3");
 
         arrivalBoard.addArrival(arrival);
@@ -61,7 +61,7 @@ public class ArrivalBoardTest {
     }
 
     @Test
-    public void testclearArrivals() {
+    public void testClearArrivals() {
         Arrival arrival = new Arrival(100, "Beijing", "Platform3");
 
         arrivalBoard.addArrival(arrival);
@@ -75,7 +75,7 @@ public class ArrivalBoardTest {
 
 
     @Test
-    public void testequals() {
+    public void testEquals() {
         Line line = new Line(LineResourceData.BAKERLOO, "lol", "ahahah");
 
         ArrivalBoard arrivalBoard1 = new ArrivalBoard(line, "NorthWest");

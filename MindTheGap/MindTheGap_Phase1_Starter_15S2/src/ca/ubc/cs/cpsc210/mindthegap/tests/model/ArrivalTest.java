@@ -18,28 +18,28 @@ public class ArrivalTest {
     }
 
     @Test
-    public void testgetTravelDirn() {
+    public void testGetTravelDirn() {
         assertEquals("NorthWest", arrival.getTravelDirn());
     }
 
     @Test
-    public void testgetPlatformName() {
+    public void testGetPlatformName() {
         assertEquals("Platform1", arrival.getPlatformName());
     }
 
     @Test
-    public void testgetTimeToStationInMins() {
+    public void testGetTimeToStationInMins() {
         assertEquals(2, arrival.getTimeToStationInMins());
 
     }
 
     @Test
-    public void testgetDestination() {
+    public void testGetDestination() {
         assertEquals("Taiyuan", arrival.getDestination());
     }
 
     @Test
-    public void testgetPlatform() {
+    public void testGetPlatform() {
         assertEquals(" NorthWest - Platform1 ", arrival.getPlatform());
     }
 
